@@ -11,7 +11,6 @@ public class telaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         txtWelcome = new javax.swing.JLabel();
-        txtPermissao = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -26,9 +25,6 @@ public class telaPrincipal extends javax.swing.JFrame {
 
         txtWelcome.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         txtWelcome.setText("Mensagem de boas vindas");
-
-        txtPermissao.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        txtPermissao.setText("Permissão level");
 
         jMenu1.setText("Quartos");
 
@@ -78,9 +74,7 @@ public class telaPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtPermissao)
-                    .addComponent(txtWelcome))
+                .addComponent(txtWelcome)
                 .addContainerGap(97, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -88,9 +82,7 @@ public class telaPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(txtWelcome)
-                .addGap(26, 26, 26)
-                .addComponent(txtPermissao)
-                .addContainerGap(180, Short.MAX_VALUE))
+                .addContainerGap(231, Short.MAX_VALUE))
         );
 
         pack();
@@ -155,7 +147,6 @@ public class telaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     public static javax.swing.JMenu menuRelatorios;
-    public static javax.swing.JLabel txtPermissao;
     public static javax.swing.JLabel txtWelcome;
     // End of variables declaration//GEN-END:variables
 }
