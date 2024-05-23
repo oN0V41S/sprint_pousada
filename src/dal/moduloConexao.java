@@ -24,6 +24,7 @@ public class moduloConexao {
             return conexao;
         }catch(Exception erro){
             JOptionPane.showMessageDialog(null,"Ocorreu um Erro Ao tentar se conectar com Banco de dados!!");
+            System.exit(0);
             return null;
         }
     }
