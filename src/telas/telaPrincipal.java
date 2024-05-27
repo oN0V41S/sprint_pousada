@@ -27,7 +27,7 @@ public class telaPrincipal extends javax.swing.JFrame {
         txtWelcome.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         txtWelcome.setText("Mensagem de boas vindas");
 
-        txtPermissao.setText("jLabel1");
+        txtPermissao.setText("Instruções de usuários");
 
         jMenu1.setText("Quartos");
 
