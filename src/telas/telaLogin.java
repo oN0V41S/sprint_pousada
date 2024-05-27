@@ -132,7 +132,7 @@ public class telaLogin extends javax.swing.JFrame {
                 
                 // Adicionando nome do Usuário e validando Permissão do Cliente.
                 String nome = rs.getString("nome");
-                Integer permissao = Integer.parseInt(rs.getString("permissao"));
+                Integer permissao = Integer.valueOf(rs.getString("permissao"));
                 telaPrincipal.txtWelcome.setText("Seja bem vindo, " + nome);
                 if(permissao == 1){telaPrincipal.txtPermissao.setText("Você é um Adminstrador!!");}
                 else{
