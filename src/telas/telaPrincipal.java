@@ -44,7 +44,7 @@ public class telaPrincipal extends javax.swing.JFrame {
         menuRelatorios.setText("Relatórios");
         jMenuBar1.add(menuRelatorios);
 
-        jMenu3.setText("Sobre");
+        jMenu3.setText("Mais");
         jMenu3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenu3ActionPerformed(evt);
@@ -97,22 +97,23 @@ public class telaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
 
     }//GEN-LAST:event_jMenu3ActionPerformed
 
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        telaLogin login = new telaLogin();
+        this.setVisible(false);
+        login.setVisible(true);    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
     private void btnSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSobreActionPerformed
         telaSobre sobre = new telaSobre();
         this.setVisible(false);
         sobre.setVisible(true);
     }//GEN-LAST:event_btnSobreActionPerformed
-
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        telaLogin login = new telaLogin();
-        this.setVisible(false);
-        login.setVisible(true);    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
