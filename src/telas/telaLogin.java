@@ -113,7 +113,7 @@ public class telaLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     public void Login(){
-        String sql = "SELECT * FROM clientes WHERE email=? AND senha=?";
+        String sql = "SELECT * FROM tblcliente WHERE email=? AND senha=?";
 
         try{
             // Preparando a consulta com os dados inseridos pelo usuário
@@ -132,11 +132,13 @@ public class telaLogin extends javax.swing.JFrame {
                 
                 // Adicionando nome do Usuário e validando Permissão do Cliente.
                 String nome = rs.getString("nome");
-                Integer permissao = Integer.valueOf(rs.getString("permissao"));
+                Boolean permissao = Boolean.valueOf(rs.getString("admLevel"));
                 telaPrincipal.txtWelcome.setText("Seja bem vindo, " + nome);
-                if(permissao == 1){telaPrincipal.txtPermissao.setText("Você é um Adminstrador!!");}
+                if(permissao == true){
+                    telaPrincipal.txtPermissao.setText("Alugue um quarto e veja os Relatórios!!");
+                }
                 else{
-                    telaPrincipal.txtPermissao.setText("Clique no menu ´quartos´ para alugar um quarto!!");
+                    telaPrincipal.txtPermissao.setText("Você pode alugar um quarto!!");
                     telaPrincipal.menuRelatorios.setVisible(false);
                 }
                 
@@ -146,7 +148,7 @@ public class telaLogin extends javax.swing.JFrame {
                 txtLog.setText("Email ou Senha inválido. Tente novamente ou cadastre-se.");
             }
         }catch(Exception e){
-            txtLog.setText("Erro ao Se Conectar com Banco");
+            txtLog.setText("Erro ao realizar login: "+e);
         }
     }
     
