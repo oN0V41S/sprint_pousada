@@ -4,4 +4,4 @@ use pousada;
 INSERT INTO clientes (nome, email, senha, admLevel)
 VALUES
   ('Adminastro', '', true, ''),
-  ('Cliente', 'cliente@', true, 'cliente');
+  ('Cliente', 'cliente@', false, 'cliente');
