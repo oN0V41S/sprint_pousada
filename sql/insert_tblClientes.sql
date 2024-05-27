@@ -1,4 +1,4 @@
-use posada;
+use pousada;
 
 /* Inserindo dados na tabela clientes */
 INSERT INTO clientes (nome, email, senha, admLevel)
