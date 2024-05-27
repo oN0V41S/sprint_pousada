@@ -1,5 +1,7 @@
 package telas;
 
+import telas.quartos.*;
+
 public class telaPrincipal extends javax.swing.JFrame {
 
     public telaPrincipal() {
@@ -97,7 +99,9 @@ public class telaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        
+        telaQuartos quartos = new telaQuartos();
+        this.setVisible(false);
+        quartos.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
